@@ -2,8 +2,8 @@
 #include <stdio.h>
 int main()
 {
-    int counter;
-    for(counter = 0; counter < 5; counter++)
+    int i;
+    for(i = 0; i < 5; i++)
     {
         printf("Hello\n");
     }
