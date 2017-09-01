@@ -1,11 +1,8 @@
-
-#include <stdio.h>
+#include<stdio.h>
+#include<conio.h>
 int main()
 {
-    int i;
-    for(i = 0; i < 5; i++)
-    {
-        printf("Hello\n");
-    }
-    return 0;
+	for(int i=0;i<5;i++)
+	printf("\nHello");
+	return 0;
 }
