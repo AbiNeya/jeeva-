@@ -5,8 +5,7 @@ void main()
 	clrscr();
 	int a, b, c, big;
 	cout<<"Enter three numbers : ";
-	cin>>a>>b>>c;
-	//let a is the biggest
+	cin>>a>>b>>c:
 	big=a;
 	if(big<b)
 	{
