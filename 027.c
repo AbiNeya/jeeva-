@@ -1,8 +1,10 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     char a;
-    for(;;) {
-        printf( "\nPress any key, Q to quit: " );
+    for(;;) 
+    {           
+     printf( "\nPress any key, Q to quit: " );
         scanf("%c", &a);
         if (a == 'Q')
             break;
