@@ -1,8 +1,7 @@
 #include<stdio.h>
-#define begin main
-
-int begin()
+#define fun main
+int fun(void)
 {
-printf("Helloo");
-return 0;
+    printf("Rasu Valasan");
+    return 0;
 }
