@@ -1,34 +1,39 @@
 #include <stdio.h>
-void main()
+int main()
 {
-    static int array[10][10];
-    int i, j, m, n;
-  printf("Enter the order of the matrix \n");
-    scanf("%d %d", &m, &n);
-    printf("Enter the coefiicients of the matrix\n");
-    for (i = 0; i < m; ++i)
-    {
-        for (j = 0; j < n; ++j)
+    int a[10][10], transpose[10][10], r, c, i, j;
+    printf("Enter rows and columns of matrix: ");
+    scanf("%d %d", &r, &c);    
+    printf("\nEnter elements of matrix:\n");
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
         {
-            scanf("%d", &array[i][j]);
+            printf("Enter element a%d%d: ",i+1, j+1);
+            scanf("%d", &a[i][j]);
         }
-    }
-    printf("The given matrix is \n");
-    for (i = 0; i < m; ++i)
-    {
-        for (j = 0; j < n; ++j)
+
+    printf("\nEntered Matrix: \n");
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
         {
-            printf(" %d", array[i][j]);
+            printf("%d  ", a[i][j]);
+            if (j == c-1)
+                printf("\n\n");
         }
-        printf("\n");
-    }
-    printf("Transpose of matrix is \n");
-    for (j = 0; j < n; ++j)
-    {
-        for (i = 0; i < m; ++i)
+    
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
         {
-            printf(" %d", array[i][j]);
+            transpose[j][i] = a[i][j];
+        }  
+    printf("\nTranspose of Matrix:\n");
+    for(i=0; i<c; ++i)
+        for(j=0; j<r; ++j)
+        {
+            printf("%d  ",transpose[i][j]);
+            if(j==r-1)
+                printf("\n\n");
         }
-        printf("\n");
-    }
+
+   
 }
