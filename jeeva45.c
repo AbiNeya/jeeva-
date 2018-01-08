@@ -1,21 +1,12 @@
-#include <stdio.h>
-#define MIN 0
-#define MAX 9 
-
-int main()
+#includ<stdio.h>
+void main()
 {
-    int n;
-
-    while (1) {
-        printf("Enter a number (%d-%d) :", MIN, MAX);
-        scanf("%d", &n);
-
-        if (n >= MIN && n <= MAX) {
-            printf("Good\n");
-        } else {
-            printf("Damn you!\n");
-            break;
-        }
-    }
-    return 0;
+int a[100];
+printf("enter the number between specified range");
+scanf("%d',&a[100]);
+for(a[100]>=99)
+{
+printf("you enter the number not in the range");
+}
+getch();
 }
